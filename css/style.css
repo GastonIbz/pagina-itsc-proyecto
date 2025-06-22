@@ -1,0 +1,1064 @@
+/* ====================================================== */
+/* VARIABLES CSS (COLORES, FUENTES, ETC.)                 */
+/* ====================================================== */
+/* Estas variables nos permiten definir colores, espaciados y tamaños
+   en un solo lugar y reutilizarlos en todo el CSS.
+   Si necesitas cambiar un color, solo lo cambias aquí. */
+:root {
+    /* --- Paleta de Colores --- */
+  --color-azul-principal: #1566a8;
+    --color-azul-oscuro: #1976D2;
+    --color-azul-claro: #E3F2FD;
+    --color-azul-tarjeta-contacto: #0c3c63; /* Este es el color que queremos usar*/
+    --color-verde-principal: #4CAF50;
+    --color-naranja-principal: #FF9800;
+    --color-rojo-peligro: #F44336;
+    --color-info: #03A9F4;
+
+    /* --- Colores de Fondo y Bordes --- */
+
+    --color-fondo-pagina: #F5F5F5;
+    --color-fondo-tarjeta: #FFFFFF;
+    --color-borde-suave: #E0E0E0;
+
+    /* --- Colores de Footer --- */
+    --color-footer-background: var(--color-azul-tarjeta-contacto); 
+    --color-footer-text-light: #ffffff;
+    --color-footer-link-hover: #d2d8d8;
+    --color-footer-border: rgba(255, 255, 255, 0.185);
+
+    /* --- Colores de Texto --- */
+    --color-texto-oscuro: #212121;   /* Para títulos y texto principal, casi negro */
+    --color-texto-medio: #424242;    /* Para descripciones, subtítulos, texto de párrafo */
+    --color-texto-claro: #757575;    /* Para texto secundario, fechas, información pequeña */
+    --color-texto-placeholder: #BDBDBD; /* Color para el texto de los placeholders en inputs */
+    --color-texto-blanco: #FFFFFF;   /* Para texto sobre fondos oscuros */
+
+    /* --- Colores de Fondo y Bordes --- */
+    --color-fondo-pagina: #F8F9FA;   /* Fondo general de la página (gris muy claro) */
+    --color-fondo-tarjeta: #FFFFFF;  /* Fondos de tarjetas, barra de navegación, etc. */
+    --color-fondo-oscuro: #263238;   /* Fondo oscuro, usado principalmente para el footer */
+    --color-borde-suave: #E0E0E0;    /* Color para bordes de elementos */
+    /* --color-azul-tarjeta-contacto: #1976D2; */ /* Eliminada para evitar conflicto */
+
+    /* --- Sombras (para dar profundidad) --- */
+    --sombra-ligera: 0 4px 12px rgba(0,0,0,.08);    /* Sombra para tarjetas */
+    --sombra-media: 0 2px 8px rgba(0,0,0,.1);      /* Sombra para barra de navegación/header */
+    --sombra-fuerte: 0 8px 20px rgba(0,0,0,.15);    /* Sombra más pronunciada para hover o elementos destacados */
+
+    /* --- Colores para Badges/Etiquetas de Novedades y Carreras --- */
+    --badge-institucional: #2196F3;     /* Azul para noticias institucionales */
+    --badge-cooperadora: #4CAF50;       /* Verde para noticias de cooperadora */
+    --badge-docentes: #FF9800;          /* Naranja para noticias de docentes */
+    --badge-inactivo: #BDBDBD;          /* Gris para estados inactivos */
+    --badge-cupo-limitado: #FF5722;     /* Naranja rojizo para cupos limitados */
+
+    /* --- Border Radii (si decides estandarizar) --- */
+--borde-redondeado-xs: 0.25rem; /* O el valor que desees */
+--borde-redondeado-sm: 0.5rem;  /* O el valor que desees */
+--borde-redondeado-md: 0.75rem; /* Valor actual de .tarjeta */
+--borde-redondeado-lg: 0.75rem; /* Para .tarjeta-novedad */
+--borde-redondeado-xl: 1rem;    /* O el valor que desees */
+
+
+    /* --- Espaciados (Padding y Margen) --- */
+    --espaciado-xxs: 0.25rem; /* 4px */
+    --espaciado-xs: 0.5rem;   /* 8px */
+    --espaciado-sm: 1rem;     /* 16px */
+    --espaciado-md: 1.5rem;   /* 24px */
+    --espaciado-lg: 2rem;     /* 32px */
+    --espaciado-xl: 3rem;     /* 48px */
+    --espaciado-xxl: 4rem;    /* 64px */
+
+    /* --- Tamaños de Fuente --- */
+    --fuente-base: 1rem;       /* 16px - Tamaño de fuente por defecto para el cuerpo del texto */
+    --fuente-sm: 0.875rem;     /* 14px - Tamaño pequeño para texto secundario */
+    --fuente-md: 1.125rem;     /* 18px - Tamaño medio */
+    --fuente-lg: 1.25rem;      /* 20px - Tamaño grande */
+    --fuente-xl: 2rem;         /* 32px - Para títulos de sección h2 */
+    --fuente-xxl: 2.5rem;      /* 40px - Para títulos de página h1 */
+}
+
+/* ====================================================== */
+/* ESTILOS BASE Y TIPOGRAFÍA                              */
+/* ====================================================== */
+/* Estilos generales aplicados a todo el body y elementos básicos HTML */
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente principal para toda la página */
+    color: var(--color-texto-oscuro);  /* Color de texto por defecto */
+    background-color: var(--color-fondo-pagina); /* Color de fondo general de la página */
+    line-height: 1.6; /* Espaciado entre líneas para mejor lectura */
+    font-size: var(--fuente-base); /* Tamaño de fuente base */
+}
+
+/* Estilos para títulos (H1 a H6) */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-texto-oscuro); /* Color para todos los títulos */
+    font-weight: 700; /* Negrita para todos los títulos */
+    margin-bottom: var(--espaciado-sm); /* Margen inferior estándar */
+}
+
+h1 { /* Título principal de página */
+    font-size: var(--fuente-xxl);
+    font-weight: 700;
+    line-height: 1.2;
+}
+h2 { /* Títulos de sección (ej. "Últimas Novedades", "Carreras") */
+    font-size: var(--fuente-xl);
+    font-weight: 600; /* Un poco menos negrita que el H1 */
+    margin-bottom: var(--espaciado-md);
+    line-height: 1.2;
+}
+h3 { /* Subtítulos importantes */
+    font-size: var(--fuente-lg);
+    font-weight: 600;
+}
+h4 { /* Títulos dentro de componentes, como subtítulos de cards */
+    font-size: var(--fuente-base);
+    font-weight: 600;
+}
+h5 { /* Títulos de tarjetas o elementos específicos (ej. título de novedad, nombre de carrera) */
+    font-size: var(--fuente-md); /* Un poco más grande para destacar */
+    font-weight: 600;
+}
+h6 { /* Títulos pequeños o labels */
+    font-size: var(--fuente-sm);
+    font-weight: 500;
+}
+
+/* Estilos para párrafos */
+p {
+    margin-bottom: var(--espaciado-sm); /* Margen inferior para separar párrafos */
+    color: var(--color-texto-medio); /* Color de texto para párrafos */
+}
+
+/* Estilos para enlaces (links) */
+a {
+    color: var(--color-azul-principal); /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado por defecto */
+    transition: color 0.2s ease-in-out, text-decoration 0.2s ease-in-out; /* Transición suave al pasar el mouse */
+}
+a:hover {
+    color: var(--color-azul-oscuro); /* Color al pasar el mouse */
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Estilos generales para botones principales (Bootstrap .btn-primary) */
+/* Se usa la clase 'btn-principal' en HTML para aplicar estos estilos */
+.btn-principal {
+    background-color: var(--color-azul-principal);
+    border-color: var(--color-azul-principal);
+    font-weight: 500;
+    padding: 0.6rem 1.2rem; /* Espaciado interno */
+    border-radius: 0.5rem; /* Bordes ligeramente redondeados */
+    color: var(--color-texto-blanco); /* Texto blanco */
+    text-decoration: none; /* Asegurar que no se subraye */
+    display: inline-block; /* Para que padding y margen funcionen correctamente */
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+.btn-principal:hover {
+    background-color: var(--color-azul-oscuro);
+    border-color: var(--color-azul-oscuro);
+    color: var(--color-texto-blanco); /* Mantener texto blanco al hover */
+    transform: translateY(-1px); /* Pequeño efecto de levantamiento */
+    text-decoration: none; /* Asegurar que no se subraye */
+}
+
+/* Clases de utilidad para colores de texto y fondo (usadas con !important para prioridad) */
+.texto-principal { color: var(--color-azul-principal) !important; }
+.fondo-principal { background-color: var(--color-azul-principal) !important; }
+.texto-sutil { color: var(--color-texto-claro) !important; } /* Para texto más apagado, como fechas */
+
+/* Estilo base para todas las tarjetas (card de Bootstrap) */
+.tarjeta {
+    border: none; /* Quitar borde por defecto de Bootstrap */
+    border-radius: var(--borde-redondeado-md);
+    box-shadow: var(--sombra-ligera); /* Sombra sutil */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Animación al pasar el mouse */
+    background-color: var(--color-fondo-tarjeta); /* Fondo blanco por defecto */
+}
+.tarjeta:hover {
+    transform: translateY(-5px); /* Se eleva ligeramente */
+    box-shadow: var(--sombra-fuerte); /* Sombra más pronunciada */
+}
+
+/* Ajustes para media queries (móviles) */
+@media (max-width: 991.98px) { /* Laptops pequeñas y dispositivos menores ( breakpoint de Bootstrap 'lg' ) */
+    /* Aquí se añadirán estilos específicos para pantallas más pequeñas según sea necesario */
+}
+
+/* ====================================================== */
+/* COMPONENTE: ENCABEZADO PRINCIPAL (SUPERIOR)            */
+/* ====================================================== */
+.barra-superior-header {
+    background-color: var(--color-fondo-tarjeta); /* Fondo blanco para la barra superior*/
+    box-shadow: var(--sombra-media); /* Sombra para dar efecto de elevación*/
+    padding: var(--espaciado-xs) 0; /* Espaciado vertical adecuado */
+    z-index: 1030; /* Asegura que esta barra esté por encima de todo */
+}
+
+/* Marca del Instituto (Logo y Texto) */
+.marca-instituto-header {
+    display: flex; /* Para alinear el logo y el texto */
+    align-items: center; /* Centrar verticalmente */
+    text-decoration: none; /* Quitar subrayado */
+    color: var(--color-texto-oscuro); /* Color de texto por defecto */
+    margin-right: var(--espaciado-lg); /* Espacio a la derecha */
+    transition: transform 0.2s ease-in-out;
+}
+
+.marca-instituto-header:hover {
+    transform: scale(1.02); /* Efecto al pasar el mouse */
+}
+
+.marca-instituto-header .imagen-logo {
+    width: 45px; /* Tamaño del logo*/
+    height: 45px;
+    margin-right: var(--espaciado-xs); /* Espacio entre logo y texto */
+    flex-shrink: 0;
+}
+
+.marca-instituto-header .nombre-instituto-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea el texto a la izquierda, como en la imagen*/
+    line-height: 1.1;
+    font-weight: 700;
+    font-size: 1.6rem; /* Tamaño para "ITSC" */
+}
+
+.marca-instituto-header .nombre-instituto-texto small {
+    font-size: 0.75em !important; /* Tamaño para el texto sutil*/
+    color: var(--color-texto-claro) !important;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+/* Buscador en la barra superior */
+.buscador-header-superior {
+    max-width: 300px; /* Ancho máximo para el buscador*/
+    width: 100%; /* Ocupa el 100% del espacio disponible hasta el max-width */
+}
+
+.buscador-header-superior .grupo-input-mediano {
+    display: flex;
+    width: 100%;
+}
+
+.buscador-header-superior .campo-busqueda {
+    border: 1px solid var(--color-borde-suave);
+    box-shadow: none !important;
+    padding: 0.75rem var(--espaciado-sm);
+    font-size: var(--fuente-base);
+    height: 48px;
+    border-right: none;
+    border-radius: 0.5rem 0 0 0.5rem; /* Bordes redondeados*/
+    background-color: var(--color-fondo-pagina); /* Fondo claro*/
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.buscador-header-superior .campo-busqueda:focus {
+    border-color: var(--color-azul-principal);
+    box-shadow: 0 0 0 0.2rem rgba(33, 150, 243, 0.25);
+    outline: none;
+}
+
+.buscador-header-superior .campo-busqueda::placeholder {
+    color: var(--color-texto-placeholder);
+}
+
+.buscador-header-superior .boton-busqueda {
+    background-color: var(--color-azul-principal);
+    border: 1px solid var(--color-azul-principal);
+    height: 48px;
+    width: 60px; /* Ancho fijo para el botón*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0.5rem 0.5rem 0; /* Bordes redondeados*/
+    flex-shrink: 0;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.buscador-header-superior .boton-busqueda:hover {
+    background-color: var(--color-azul-oscuro);
+    border-color: var(--color-azul-oscuro);
+}
+
+.buscador-header-superior .boton-busqueda i {
+    color: var(--color-texto-blanco);
+    font-size: 1.2em;
+}
+
+/* ====================================================== */
+/* COMPONENTE: NAVEGACIÓN PRINCIPAL (INFERIOR)            */
+/* ====================================================== */
+.barra-navegacion-principal {
+    background-color: var(--color-fondo-tarjeta); /* Fondo blanco*/
+    border-top: 1px solid var(--color-borde-suave); /* Borde superior suave*/
+    box-shadow: var(--sombra-ligera); /* Sombra para un efecto más sutil que el superior*/
+    padding: 0.5rem 0; /* Espaciado vertical ligero */
+    position: sticky; /* Se queda fijo al hacer scroll */
+    top: 0; /* Se posiciona justo debajo de la barra superior, si esta también es sticky */
+    z-index: 1020; /* Ligeramente por debajo del superior */
+}
+
+.barra-navegacion-principal .navbar-nav .nav-item .nav-link {
+    color: var(--color-texto-medio); /* Color de texto para los enlaces*/
+    font-weight: 500; /* Peso de la fuente */
+    padding: 0.5rem 1rem; /* Espaciado interno de los enlaces */
+    border-radius: 0.5rem; /* Bordes redondeados al pasar el mouse */
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.barra-navegacion-principal .navbar-nav .nav-item .nav-link:hover {
+    background-color: var(--color-azul-claro); /* Fondo azul claro al pasar el mouse*/
+    color: var(--color-azul-principal); /* Color de texto azul al pasar el mouse */
+}
+
+.barra-navegacion-principal .navbar-nav .nav-item .nav-link.active {
+    background-color: var(--color-azul-principal); /* Fondo azul para el enlace activo*/
+    color: var(--color-texto-blanco); /* Texto blanco para el enlace activo*/
+    font-weight: 600; /* Más negrita para el activo */
+}
+
+.barra-navegacion-principal .navbar-nav .nav-item .nav-link.active:hover {
+    background-color: var(--color-azul-oscuro); /* Azul más oscuro para el activo al hover */
+    color: var(--color-texto-blanco);
+}
+
+/* Estilos para el dropdown (Menú "Más") */
+.barra-navegacion-principal .dropdown-menu {
+    border: none;
+    box-shadow: var(--sombra-media);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+}
+
+.barra-navegacion-principal .dropdown-item {
+    color: var(--color-texto-medio);
+    padding: 0.75rem 1.25rem;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.barra-navegacion-principal .dropdown-item:hover {
+    background-color: var(--color-azul-claro);
+    color: var(--color-azul-principal);
+}
+
+/* ====================================================== */
+/* COMPONENTE: ENCABEZADO PRINCIPAL (SUPERIOR) - AJUSTADO */
+/* ====================================================== */
+.barra-superior-header {
+    background-color: var(--color-fondo-tarjeta); /* Fondo blanco para la barra superior*/
+    box-shadow: var(--sombra-media); /* Sombra para dar efecto de elevación*/
+    padding: var(--espaciado-xs) 0; /* Espaciado vertical adecuado */
+    z-index: 1030; /* Asegura que esta barra esté por encima de todo */
+}
+
+/* Marca del Instituto (Logo y Texto) */
+.marca-instituto-header {
+    display: flex; /* Para alinear el logo y el texto */
+    align-items: center; /* Centrar verticalmente */
+    text-decoration: none; /* Quitar subrayado */
+    /* REMOVIDO: color: var(--color-texto-oscuro); */ /* Este se sobrescribirá para el ITSC */
+    margin-right: auto; /* Empuja el buscador a la derecha, llevando el logo a la izquierda */
+    transition: transform 0.2s ease-in-out;
+}
+
+.marca-instituto-header:hover {
+    transform: scale(1.02); /* Efecto al pasar el mouse */
+}
+
+.marca-instituto-header .imagen-logo {
+    width: 45px; /* Tamaño del logo*/
+    height: 45px;
+    margin-right: var(--espaciado-xs); /* Espacio entre logo y texto */
+    flex-shrink: 0;
+}
+
+.marca-instituto-header .nombre-instituto-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea el texto a la izquierda, como en la imagen*/
+    line-height: 1.1;
+    font-weight: 700;
+    font-size: 1.6rem; /* Tamaño para "ITSC" */
+}
+
+/* NUEVO: Color para el texto "ITSC" */
+.marca-instituto-header .nombre-instituto-texto {
+    color: var(--color-azul-principal); /* Cambiado a azul primario (color de la lupa) */
+}
+
+.marca-instituto-header .nombre-instituto-texto small {
+    font-size: 0.75em !important; /* Tamaño para el texto sutil*/
+    color: var(--color-texto-claro) !important;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+/* Buscador en la barra superior */
+.buscador-header-superior {
+    max-width: 300px; /* Ancho máximo para el buscador*/
+    width: 100%; /* Ocupa el 100% del espacio disponible hasta el max-width */
+}
+
+.buscador-header-superior .grupo-input-mediano {
+    display: flex;
+    width: 100%;
+}
+
+.buscador-header-superior .campo-busqueda {
+    border: 1px solid var(--color-borde-suave);
+    box-shadow: none !important;
+    padding: 0.75rem var(--espaciado-sm);
+    font-size: var(--fuente-base);
+    height: 48px;
+    border-right: none;
+    border-radius: 0.5rem 0 0 0.5rem; /* Bordes redondeados*/
+    background-color: var(--color-fondo-pagina); /* Fondo claro*/
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.buscador-header-superior .campo-busqueda:focus {
+    border-color: var(--color-azul-principal);
+    box-shadow: 0 0 0 0.2rem rgba(33, 150, 243, 0.25);
+    outline: none;
+}
+
+.buscador-header-superior .campo-busqueda::placeholder {
+    color: var(--color-texto-placeholder);
+}
+
+.buscador-header-superior .boton-busqueda {
+    background-color: var(--color-azul-principal);
+    border: 1px solid var(--color-azul-principal);
+    height: 48px;
+    width: 60px; /* Ancho fijo para el botón*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0.5rem 0.5rem 0; /* Bordes redondeados*/
+    flex-shrink: 0;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.buscador-header-superior .boton-busqueda:hover {
+    background-color: var(--color-azul-oscuro);
+    border-color: var(--color-azul-oscuro);
+}
+
+.buscador-header-superior .boton-busqueda i {
+    color: var(--color-texto-blanco);
+    font-size: 1.2em;
+}
+
+/* ====================================================== */
+/* COMPONENTE: NAVEGACIÓN PRINCIPAL (INFERIOR) - AJUSTADO */
+/* ====================================================== */
+.barra-navegacion-principal {
+    background-color: var(--color-fondo-tarjeta); /* Fondo blanco*/
+    border-top: 1px solid var(--color-borde-suave); /* Borde superior suave*/
+    box-shadow: var(--sombra-ligera); /* Sombra para un efecto más sutil que el superior*/
+    padding: 0.5rem 0; /* Espaciado vertical ligero */
+    position: sticky; /* Se queda fijo al hacer scroll */
+    top: 0; /* Se posiciona justo debajo de la barra superior, si esta también es sticky */
+    z-index: 1020; /* Ligeramente por debajo del superior */
+}
+
+.barra-navegacion-principal .navbar-nav .nav-item .nav-link {
+    color: var(--color-texto-medio); /* Color de texto para los enlaces*/
+    font-weight: 500; /* Peso de la fuente */
+    padding: 0.5rem 1rem; /* Espaciado interno de los enlaces */
+    border-radius: 0.5rem; /* Bordes redondeados al pasar el mouse */
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.barra-navegacion-principal .navbar-nav .nav-item .nav-link:hover {
+    background-color: var(--color-azul-claro); /* Fondo azul claro al pasar el mouse*/
+    color: var(--color-azul-principal); /* Color de texto azul al pasar el mouse */
+}
+
+.barra-navegacion-principal .navbar-nav .nav-item .nav-link.active {
+    background-color: var(--color-azul-principal); /* Fondo azul para el enlace activo*/
+    color: var(--color-texto-blanco); /* Texto blanco para el enlace activo*/
+    font-weight: 600; /* Más negrita para el activo */
+}
+
+.barra-navegacion-principal .navbar-nav .nav-item .nav-link.active:hover {
+    background-color: var(--color-azul-oscuro); /* Azul más oscuro para el activo al hover */
+    color: var(--color-texto-blanco);
+}
+
+/* Estilos para el dropdown (si lo vuelves a incluir) */
+.barra-navegacion-principal .dropdown-menu {
+    border: none;
+    box-shadow: var(--sombra-media);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+}
+
+.barra-navegacion-principal .dropdown-item {
+    color: var(--color-texto-medio);
+    padding: 0.75rem 1.25rem;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.barra-navegacion-principal .dropdown-item:hover {
+    background-color: var(--color-azul-claro);
+    color: var(--color-azul-principal);
+}
+
+/* ====================================================== */
+/* AJUSTES RESPONSIVOS DEL HEADER                         */
+/* ====================================================== */
+@media (max-width: 991.98px) { /* Tabletas y móviles (punto de quiebre 'lg' de Bootstrap) */
+    .barra-superior-header .container {
+        flex-wrap: wrap; /* Permite que los elementos salten de línea */
+        justify-content: center; /* Centra los elementos */
+        padding-top: var(--espaciado-sm);
+        padding-bottom: var(--espaciado-sm);
+    }
+
+    .marca-instituto-header {
+        margin-bottom: var(--espaciado-sm); /* Margen inferior para separar del buscador */
+        margin-right: 0; /* Elimina margen derecho para centrar mejor en móvil */
+        width: 100%; /* Ocupa todo el ancho disponible para centrar el contenido interno */
+        justify-content: center; /* Centra el logo y texto ITSC en móvil */
+    }
+
+    .marca-instituto-header .imagen-logo {
+        width: 35px; /* Tamaño más pequeño en móvil */
+        height: 35px;
+    }
+    .marca-instituto-header .nombre-instituto-texto {
+        font-size: 1.4rem; /* Texto ITSC más pequeño */
+    }
+    .marca-instituto-header .nombre-instituto-texto small {
+        font-size: 0.65em !important; /* Texto sutil más pequeño */
+    }
+
+    .buscador-header-superior {
+        width: 100%; /* El buscador ocupa todo el ancho en móvil */
+        max-width: 100%; /* No limitar el ancho máximo en móvil */
+    }
+    .buscador-header-superior .campo-busqueda,
+    .buscador-header-superior .boton-busqueda {
+        height: 44px; /* Altura ligeramente reducida */
+    }
+    .buscador-header-superior .grupo-input-mediano > .campo-busqueda {
+        border-radius: 0.5rem !important; /* Redondeo completo */
+        border-right: 1px solid var(--color-borde-suave); /* Restaura el borde si se quita el botón */
+    }
+    .buscador-header-superior .grupo-input-mediano > .boton-busqueda {
+        display: none !important; /* Oculta el botón de búsqueda en móvil para el diseño de la imagen*/
+    }
+
+    /* Ajustes para la barra de navegación principal en móvil */
+    .barra-navegacion-principal {
+        padding: 0; /* No padding vertical en móvil */
+        border-top: none; /* Elimina el borde superior si lo tuviera */
+        box-shadow: none; /* Elimina la sombra en móvil */
+        position: static; /* Ya no es sticky, para que el menú colapsable funcione bien */
+        background-color: transparent; /* Fondo transparente */
+    }
+
+    .barra-navegacion-principal .container {
+        padding: 0; /* Elimina padding del contenedor */
+    }
+
+    .barra-navegacion-principal .navbar-toggler {
+        display: block; /* Muestra el botón de hamburguesa de la navegación principal */
+        margin: var(--espaciado-sm) auto; /* Centra el botón de hamburguesa y añade margen */
+        border: 1px solid var(--color-borde-suave);
+        padding: 0.25rem 0.75rem;
+    }
+
+    .barra-navegacion-principal .navbar-collapse {
+        background-color: var(--color-fondo-tarjeta); /* Fondo blanco para el menú colapsado */
+        border-top: 1px solid var(--color-borde-suave);
+        box-shadow: var(--sombra-media);
+        width: 100%; /* Ocupa todo el ancho */
+        padding: var(--espaciado-sm) 0; /* Padding interno */
+        position: absolute; /* Posiciona el menú colapsado */
+        top: 100%; /* Debajo de la barra superior */
+        left: 0;
+        z-index: 1010; /* Asegura que esté por encima del contenido principal */
+    }
+
+    .barra-navegacion-principal .navbar-nav {
+        flex-direction: column; /* Apila los elementos del menú verticalmente */
+        width: 100%;
+    }
+
+    .barra-navegacion-principal .navbar-nav .nav-item {
+        margin-bottom: 0; /* Sin margen entre ítems */
+    }
+
+    .barra-navegacion-principal .navbar-nav .nav-item .nav-link {
+        padding: 0.75rem var(--espaciado-md); /* Más padding para los enlaces en móvil */
+        border-radius: 0; /* Sin redondeo en móvil */
+        width: 100%; /* Ocupa todo el ancho del menú */
+        text-align: left; /* Alinea el texto a la izquierda */
+        color: var(--color-texto-oscuro); /* Texto más oscuro en móvil */
+    }
+
+    .barra-navegacion-principal .navbar-nav .nav-item .nav-link.active {
+        background-color: transparent; /* No tiene fondo azul activo en móvil*/
+        color: var(--color-azul-principal) !important; /* Solo el texto es azul*/
+        border-left: 4px solid var(--color-azul-principal); /* Barra lateral azul para el activo*/
+        padding-left: calc(var(--espaciado-md) - 4px); /* Ajusta el padding por la barra */
+        font-weight: 700; /* Un poco más negrita para el activo */
+    }
+    .barra-navegacion-principal .navbar-nav .nav-item .nav-link.active:hover {
+        background-color: var(--color-azul-claro); /* Se activa el fondo claro al hover en móvil */
+    }
+
+    .barra-navegacion-principal .dropdown-menu {
+        position: static !important; /* Permite que el dropdown se expanda sin desbordar */
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        background-color: var(--color-fondo-pagina); /* Fondo ligeramente diferente para dropdown */
+    }
+    .barra-navegacion-principal .dropdown-item {
+        padding: 0.75rem var(--espaciado-xl); /* Mayor indentación para dropdown items */
+        color: var(--color-texto-medio);
+    }
+    .barra-navegacion-principal .dropdown-item:hover {
+        background-color: var(--color-azul-claro);
+    }
+}
+
+/* ====================================================== */
+/* SECCIÓN: CONTENIDO PRINCIPAL (HOME)                    */
+/* ====================================================== */
+/* Estilos para el contenedor principal de la página de inicio. */
+.contenido-principal-home {
+    padding-top: var(--espaciado-xl); /* Espaciado superior para separar del header */
+    padding-bottom: var(--espaciado-xl); /* Espaciado inferior para separar del footer */
+}
+
+/* Ajustes responsivos para el contenido principal */
+@media (max-width: 991.98px) { /* Tabletas y móviles (menor a 992px) */
+    .contenido-principal-home {
+        padding-top: var(--espaciado-lg); /* Menor padding en pantallas pequeñas */
+        padding-bottom: var(--espaciado-lg);
+    }
+}
+
+/* ====================================================== */
+/* COMPONENTE: NAVEGACIÓN PRINCIPAL (INFERIOR)            */
+/* ====================================================== */
+.barra-navegacion-principal {
+    background-color: var(--color-fondo-tarjeta); /* Fondo blanco*/
+    border-top: 1px solid var(--color-borde-suave); /* Borde superior suave*/
+    box-shadow: var(--sombra-ligera); /* Sombra para un efecto más sutil que el superior*/
+    padding: 0.5rem 0; /* Espaciado vertical ligero */
+    position: sticky; /* Se queda fijo al hacer scroll */
+    top: 0; /* Se posiciona justo debajo de la barra superior, si esta también es sticky */
+    z-index: 1020; /* Ligeramente por debajo del superior */
+}
+
+.barra-navegacion-principal .navbar-nav .nav-item .nav-link {
+    color: var(--color-texto-medio); /* Color de texto para los enlaces*/
+    font-weight: 500; /* Peso de la fuente */
+    padding: 0.5rem 1rem; /* Espaciado interno de los enlaces */
+    border-radius: 0.5rem; /* Bordes redondeados al pasar el mouse */
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.barra-navegacion-principal .navbar-nav .nav-item .nav-link:hover {
+    background-color: var(--color-azul-claro); /* Fondo azul claro al pasar el mouse*/
+    color: var(--color-azul-principal); /* Color de texto azul al pasar el mouse */
+}
+
+.barra-navegacion-principal .navbar-nav .nav-item .nav-link.active {
+    background-color: var(--color-azul-principal); /* Fondo azul para el enlace activo*/
+    color: var(--color-texto-blanco); /* Texto blanco para el enlace activo*/
+    font-weight: 600; /* Más negrita para el activo */
+}
+
+.barra-navegacion-principal .navbar-nav .nav-item .nav-link.active:hover {
+    background-color: var(--color-azul-oscuro); /* Azul más oscuro para el activo al hover */
+    color: var(--color-texto-blanco);
+}
+
+/* Estilos para el dropdown (si lo vuelves a incluir) */
+.barra-navegacion-principal .dropdown-menu {
+    border: none;
+    box-shadow: var(--sombra-media);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+}
+
+.barra-navegacion-principal .dropdown-item {
+    color: var(--color-texto-medio);
+    padding: 0.75rem 1.25rem;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.barra-navegacion-principal .dropdown-item:hover {
+    background-color: var(--color-azul-claro);
+    color: var(--color-azul-principal);
+}
+
+/* ====================================================== */
+/* SECCIÓN: Novedades (Contenido Principal)               */
+/* ====================================================== */
+
+
+/* Título principal de la sección y el enlace "Ver todas" */
+.seccion-novedades h2 {
+    font-size: 2rem; /* Tamaño del título "Últimas Novedades"*/
+    color: var(--color-texto-oscuro);
+    font-weight: 700;
+    margin-bottom: var(--espaciado-xxs); /* Ajuste de margen inferior */
+    text-align: left;
+}
+
+.seccion-novedades .btn-ver-todas {
+    color: var(--color-azul-principal); /* Color del texto "Ver todas"*/
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.95rem; /* Tamaño de fuente para "Ver todas"*/
+    transition: color 0.2s ease-in-out;
+}
+
+.seccion-novedades .btn-ver-todas:hover {
+    color: var(--color-azul-oscuro);
+    text-decoration: underline;
+}
+
+.seccion-novedades .btn-ver-todas i {
+    margin-left: var(--espaciado-xxs);
+    font-size: 0.9em;
+}
+
+.seccion-novedades p.texto-sutil {
+    margin-top: 0; /* Para asegurar que no haya margen superior indeseado */
+    margin-bottom: var(--espaciado-lg);
+    color: var(--color-texto-claro); /* Asegura el color gris suave*/
+    font-size: 1rem; /* Tamaño de la fuente del subtítulo*/
+    text-align: left;
+}
+
+.tarjeta-novedad {
+    border: 1px solid var(--color-borde-suave); /* Borde suave para la tarjeta*/
+     border-radius: var(--borde-redondeado-lg);
+    box-shadow: var(--sombra-ligera); /* Sombra sutil para elevación*/
+    background-color: var(--color-fondo-tarjeta); /* Fondo blanco*/
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Transición para hover */
+}
+
+.tarjeta-novedad:hover {
+    transform: translateY(-3px); /* Pequeño levantamiento al pasar el mouse */
+    box-shadow: var(--sombra-media); /* Sombra un poco más pronunciada al pasar el mouse */
+}
+
+.tarjeta-novedad .card-body {
+    padding: var(--espaciado-lg); /* Espaciado interno generoso*/
+    text-align: left; /* Asegura que el contenido interno de la tarjeta esté a la izquierda */
+}
+
+.tarjeta-novedad .card-title {
+    font-size: 1.4rem; /* Tamaño del título de la novedad*/
+    color: var(--color-texto-oscuro); /* Color del título*/
+    font-weight: 600; /* Negrita para el título */
+    margin-bottom: var(--espaciado-xs); /* Ajuste para la distancia entre título y descripción */
+}
+
+.tarjeta-novedad .card-text {
+    font-size: 0.95rem; /* Tamaño del texto descriptivo*/
+    color: var(--color-texto-medio); /* Color del texto descriptivo*/
+    line-height: 1.6;
+    margin-bottom: var(--espaciado-sm);
+}
+
+.tarjeta-novedad .categoria-novedad {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.2em 0.6em;
+    border-radius: 0.3rem;
+    text-transform: uppercase;
+}
+/* Colores específicos para las categorías de novedades */
+.categoria-novedad.badge-institucional { background-color: var(--badge-institucional) !important; }
+.categoria-novedad.badge-cooperadora { background-color: var(--badge-cooperadora) !important; }
+.categoria-novedad.badge-docentes { background-color: var(--badge-docentes) !important; }
+.categoria-novedad.badge-inactivo { background-color: var(--badge-inactivo) !important; }
+.categoria-novedad.badge-cupo-limitado { background-color: var(--badge-cupo-limitado) !important; }
+
+
+.tarjeta-novedad .fecha-novedad {
+    font-size: 0.8rem; /* Tamaño de la fecha*/
+    color: var(--color-texto-claro); /* Color gris claro para la fecha*/
+}
+
+.tarjeta-novedad .btn-link-novedad {
+    color: var(--color-azul-principal); /* Color azul para el enlace "Ver más"*/
+    font-weight: 600;
+    text-decoration: none; /* Quitar subrayado por defecto */
+    transition: color 0.2s ease-in-out;
+}
+
+.tarjeta-novedad .btn-link-novedad:hover {
+    color: var(--color-azul-oscuro); /* Color más oscuro al pasar el mouse */
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+.tarjeta-novedad .btn-link-novedad i { /* Icono de flecha */
+    margin-left: var(--espaciado-xxs); /* Espacio a la izquierda del icono */
+    font-size: 0.85em; /* Icono un poco más pequeño */
+}
+
+/* ====================================================== */
+/* SECCIÓN: Barra Lateral (Contacto y Menú Rápido)        */
+/* ====================================================== */
+
+/* Tarjeta de Contacto Rápido*/
+.tarjeta-contacto {
+    background-color: var(--color-azul-principal); /* Fondo azul oscuro como en la imagen*/
+    color: var(--color-texto-blanco); /* Texto blanco*/
+    border: none; /* Sin borde */
+    border-radius: var(--borde-redondeado-lg);
+    box-shadow: var(--sombra-ligera);
+    padding: var(--espaciado-lg) var(--espaciado-xl); /* Espaciado interno más amplio a los lados*/
+}
+
+.tarjeta-contacto .card-title {
+    color: var(--color-texto-blanco); /* Título blanco*/
+    font-size: 1.5rem; /* Tamaño del título "Contacto"*/
+    font-weight: 600;
+}
+
+.tarjeta-contacto .icono-llamada {
+display: none;
+}
+
+.tarjeta-contacto .info-contacto {
+    margin-top: var(--espaciado-lg); /* Margen superior para la lista de info*/
+}
+
+.tarjeta-contacto .info-contacto li {
+    font-size: 0.95rem; /* Tamaño del texto de la información de contacto*/
+    margin-bottom: var(--espaciado-xs);
+    display: flex;
+    align-items: flex-start; /* Alinea ícono y texto al inicio */
+}
+
+.tarjeta-contacto .info-contacto li i {
+    font-size: 1rem; /* Tamaño de los íconos pequeños (mapa, teléfono, email)*/
+    margin-right: var(--espaciado-sm);
+    margin-top: 0.2rem; /* Ajuste para alinear el icono con la primera línea de texto */
+    color: var(--color-texto-blanco); /* Color blanco*/
+}
+
+.tarjeta-contacto .info-contacto li a { /* Por si algún item fuera un enlace, aunque en la imagen no lo parece */
+    color: var(--color-texto-blanco); /* Enlaces blancos */
+    text-decoration: underline; /* Subrayado para indicar que es un enlace */
+    transition: color 0.2s ease-in-out;
+}
+.tarjeta-contacto .info-contacto li a:hover {
+    color: var(--color-azul-claro); /* Resaltar al pasar el mouse */
+}
+
+
+/* Tarjeta de Menú Rápido / Enlaces Útiles*/
+.tarjeta-menu-rapido {
+    border: 1px solid var(--color-borde-suave);
+    border-radius: var(--borde-redondeado-lg);
+    box-shadow: var(--sombra-ligera);
+    background-color: var(--color-fondo-tarjeta); /* Fondo blanco*/
+}
+
+.tarjeta-menu-rapido .card-header {
+    background-color: transparent; /* Fondo transparente para el header de la tarjeta*/
+    border-bottom: 1px solid var(--color-borde-suave); /* Borde inferior suave*/
+    padding: var(--espaciado-md) var(--espaciado-lg); /* Padding para el header */
+}
+
+.tarjeta-menu-rapido .card-header h5 {
+    font-size: 1.25rem; /* Tamaño del título "Menú Rápido"*/
+    color: var(--color-texto-oscuro);
+    font-weight: 600;
+}
+
+.tarjeta-menu-rapido .list-group-item {
+    border: none;
+    padding: var(--espaciado-sm) var(--espaciado-lg);
+    color: var(--color-texto-medio);
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    cursor: pointer;
+    padding-bottom: var(--espaciado-sm);
+}
+
+.tarjeta-menu-rapido .list-group-item:hover {
+    background-color: var(--color-azul-claro);
+    color: var(--color-azul-principal);
+}
+
+.tarjeta-menu-rapido .list-group-item a {
+    color: var(--color-texto-medio); /* Color inicial del texto del enlace principal */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.tarjeta-menu-rapido .list-group-item:hover > a {
+    color: var(--color-azul-principal);
+}
+
+.tarjeta-menu-rapido .list-group-item .icono-flecha {
+    font-size: 0.8rem;
+    color: var(--color-texto-claro);
+    transition: color 0.2s ease-in-out;
+}
+
+.tarjeta-menu-rapido .list-group-item:hover .icono-flecha {
+    color: var(--color-azul-principal);
+}
+
+/* Sub-menús */
+.tarjeta-menu-rapido .sub-menu {
+    list-style: none;
+    padding-left: var(--espaciado-lg);
+    margin-bottom: var(--espaciado-xs);
+    padding-top: var(--espaciado-xs);
+    border-top: 1px solid var(--color-borde-suave);
+    margin-left: -var(--espaciado-lg);
+    margin-right: -var(--espaciado-lg);
+    padding-right: var(--espaciado-lg);
+    background-color: var(--color-fondo-pagina);
+}
+
+.tarjeta-menu-rapido .sub-menu li {
+    margin-bottom: var(--espaciado-xxs);
+}
+
+.tarjeta-menu-rapido .sub-menu li a {
+    color: var(--color-texto-medio);
+    font-size: 0.9rem;
+    transition: color 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    padding: var(--espaciado-xxs) 0;
+}
+
+.tarjeta-menu-rapido .sub-menu li a:hover {
+    color: var(--color-azul-principal);
+}
+
+.tarjeta-menu-rapido .sub-menu li a i.fa-circle-dot {
+    font-size: 0.45rem;
+    color: var(--color-texto-claro);
+    margin-right: var(--espaciado-sm);
+    transition: color 0.2s ease-in-out;
+}
+
+.tarjeta-menu-rapido .sub-menu li a:hover i.fa-circle-dot {
+    color: var(--color-azul-principal);
+}
+
+/* ====================================================== */
+/* FOOTER                                                 */
+/* ====================================================== */
+.footer-custom {
+    background-color: var(--color-footer-background); /* Color de fondo del footer*/
+    color: var(--color-footer-text-light); /* Color de texto general para el footer*/
+    font-size: 0.9rem;
+}
+
+.footer-custom .container {
+    border-top: 1px solid var(--color-footer-border); /* Línea divisoria superior del footer */
+    padding-top: var(--espaciado-xl); /* Padding superior del contenedor del footer */
+}
+
+/* Títulos del footer (Enlaces Rápidos, Académico, Contacto)*/
+.footer-title {
+    color: var(--color-texto-blanco); /* Color blanco para los títulos*/
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: var(--espaciado-md);
+}
+
+/* Listas de enlaces en el footer*/
+.footer-list li {
+    margin-bottom: var(--espaciado-xxs); /* Espacio entre los ítems de la lista */
+}
+
+.footer-list a,
+.footer-list-contact li { /* Aplicado también a los ítems de contacto */
+    color: var(--color-footer-text-light); /* Color de los enlaces*/
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-list a:hover,
+.footer-list-contact li:hover {
+    color: var(--color-footer-link-hover); /* Color al pasar el mouse*/
+    text-decoration: none; /* Mantener sin subrayado */
+}
+
+/* Lista de contacto con íconos*/
+.footer-list-contact li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: var(--espaciado-xxs);
+}
+
+.footer-list-contact li i {
+    margin-right: var(--espaciado-sm);
+    font-size: 1rem;
+    color: var(--color-footer-text-light); /* Color de los iconos de contacto*/
+    margin-top: 0.2rem; /* Alineación vertical con el texto */
+}
+
+/* Iconos de Redes Sociales*/
+.social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Tamaño del círculo */
+    height: 40px; /* Tamaño del círculo */
+    border-radius: 50%; /* Forma circular */
+    background-color: var(--color-footer-text-light); /* Color del círculo*/
+    color: var(--color-footer-background); /* Color del icono dentro del círculo*/
+    font-size: 1.2rem;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+    background-color: var(--color-azul-principal); /* Color del círculo al pasar el mouse*/
+    color: var(--color-texto-blanco); /* Color del icono al pasar el mouse*/
+}
+
+/* Sección de Copyright y Enlaces Legales*/
+.copyright-text {
+    color: var(--color-footer-text-light);
+    font-size: 0.8rem;
+}
+
+.footer-legal-links .list-inline-item {
+    font-size: 0.8rem;
+}
+
+.footer-legal-links a {
+    color: var(--color-footer-text-light);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-legal-links a:hover {
+    color: var(--color-footer-link-hover);
+    text-decoration: underline;
+}
+
+/* Asegurar que el borde inferior del row sea el correcto */
+.row.pb-4.border-bottom.border-secondary-subtle {
+    border-bottom-color: var(--color-footer-border) !important;
+}
