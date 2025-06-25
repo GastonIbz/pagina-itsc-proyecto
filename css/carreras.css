@@ -1,0 +1,61 @@
+/* Cards de carreras */
+.carrera-card {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+    border: 1px solid #e3e6ea;
+    background: #fff;
+}
+
+.carrera-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    border-color: #b6c2d1;
+}
+
+.carrera-card .card-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.carrera-card .badge {
+    font-size: 0.85rem;
+    letter-spacing: 0.03em;
+}
+
+.carrera-card .card-text {
+    font-size: 0.97rem;
+}
+
+.texto-sutil {
+    color: #6c757d;
+}
+
+/* Estilo para el botón de ver más */
+.btn-ver-mas {
+    font-size: 0.95rem;
+    color: #0d6efd;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.btn-ver-mas:focus {
+    outline: none;
+    color: #0a58ca;
+}
+
+/* Ocultar el contenido extra por defecto */
+.carrera-extra {
+    display: none;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+/* Mostrar el contenido extra cuando el colapso está abierto */
+.collapse.show .carrera-extra {
+    display: block;
+}

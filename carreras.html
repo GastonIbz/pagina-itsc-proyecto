@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carreras | Instituto ITSC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carreras.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg barra-superior-header">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="navbar-brand marca-instituto-header" href="index.html">
+                    <img src="img/Logo.ico" alt="Logo ITSC" class="imagen-logo">
+                    <div class="nombre-instituto-texto">
+                        ITSC
+                        <small class="texto-sutil">Instituto Técnico Superior Córdoba</small>
+                    </div>
+                </a>
+                <form class="d-flex buscador-header-superior" role="search">
+                    <div class="grupo-input-mediano">
+                        <input type="text" class="campo-busqueda" placeholder="¿Qué estás buscando?" aria-label="Buscar">
+                        <button class="boton-busqueda" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg barra-navegacion-principal">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipalNavbar" aria-controls="menuPrincipalNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipalNavbar">
+                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <li class="nav-item">
+        <a class="nav-link fw-bold" href="index.html">Inicio</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link fw-bold" href="nosotros.html">Nosotros</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link fw-bold" href="carreras.html">Carreras</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link fw-bold" href="tramites.html">Trámites</a>
+    </li>
+    <li class="nav-item">
+         <a class="nav-link fw-bold" href="estudiantes.html">Estudiantes</a>
+       
+    </li>
+</ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h1 class="mb-2">Carreras</h1>
+        <p class="mb-4 texto-sutil">Explora nuestros programas académicos y encuentra tu vocación</p>
+
+        <div class="row g-4">
+            <!-- Administración y Gestión -->
+            <section class="col-12 mb-4">
+                <h5 class="mb-2"><i class="fas fa-briefcase text-primary me-2"></i>Administración y Gestión</h5>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="card carrera-card">
+                            <div class="card-body">
+                                <span class="badge bg-warning text-dark mb-2">Presencial</span>
+                                <h6 class="card-title">Administración</h6>
+                                <p class="card-text texto-sutil">Desarrolla competencias para liderar organizaciones en entornos dinámicos.</p>
+                                <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoAdmin" aria-expanded="false" aria-controls="infoAdmin">
+                                    Ver más información
+                                </button>
+                                <div class="collapse mt-2" id="infoAdmin">
+                                    <div class="carrera-extra">
+                                        <ul>
+                                            <li>Duración: 3 años</li>
+                                            <li>Título: Técnico Superior en Administración</li>
+                                            <li>Salida laboral en empresas, PyMEs y sector público.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card carrera-card">
+                            <div class="card-body">
+                                <span class="badge bg-warning text-dark mb-2">Presencial</span>
+                                <h6 class="card-title">Administración de Recursos</h6>
+                                <p class="card-text texto-sutil">Gestiona recursos humanos, materiales y financieros de manera eficiente.</p>
+                                <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoAdminRecursos" aria-expanded="false" aria-controls="infoAdminRecursos">
+                                    Ver más información
+                                </button>
+                                <div class="collapse mt-2" id="infoAdminRecursos">
+                                    <div class="carrera-extra">
+                                        <ul>
+                                            <li>Duración: 3 años</li>
+                                            <li>Título: Técnico Superior en Administración de Recursos</li>
+                                            <li>Gestión de recursos en organizaciones públicas y privadas.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card carrera-card">
+                            <div class="card-body">
+                                <span class="badge bg-warning text-dark mb-2">Presencial</span>
+                                <h6 class="card-title">Gestión Ambiental</h6>
+                                <p class="card-text texto-sutil">Formación en gestión sostenible y protección del medio ambiente.</p>
+                                <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoAmbiental" aria-expanded="false" aria-controls="infoAmbiental">
+                                    Ver más información
+                                </button>
+                                <div class="collapse mt-2" id="infoAmbiental">
+                                    <div class="carrera-extra">
+                                        <ul>
+                                            <li>Duración: 3 años</li>
+                                            <li>Título: Técnico Superior en Gestión Ambiental</li>
+                                            <li>Salida laboral en organismos ambientales y empresas.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card carrera-card mt-3">
+                            <div class="card-body">
+                                <span class="badge bg-warning text-dark mb-2">Presencial</span>
+                                <h6 class="card-title">Gestión y Mantenimiento</h6>
+                                <p class="card-text texto-sutil">Capacita en el mantenimiento y gestión de infraestructuras y servicios.</p>
+                                <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoMantenimiento" aria-expanded="false" aria-controls="infoMantenimiento">
+                                    Ver más información
+                                </button>
+                                <div class="collapse mt-2" id="infoMantenimiento">
+                                    <div class="carrera-extra">
+                                        <ul>
+                                            <li>Duración: 3 años</li>
+                                            <li>Título: Técnico Superior en Gestión y Mantenimiento</li>
+                                            <li>Salida laboral en industrias y servicios técnicos.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tecnología -->
+            <section class="col-12 mb-4">
+                <h5 class="mb-2"><i class="fas fa-laptop-code text-success me-2"></i>Tecnología</h5>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="card carrera-card">
+                            <div class="card-body">
+                                <span class="badge bg-warning text-dark mb-2">Presencial</span>
+                                <h6 class="card-title">Desarrollo de Software</h6>
+                                <p class="card-text texto-sutil">Aprende a diseñar, desarrollar y mantener aplicaciones y sistemas informáticos.</p>
+                                <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoSoftware" aria-expanded="false" aria-controls="infoSoftware">
+                                    Ver más información
+                                </button>
+                                <div class="collapse mt-2" id="infoSoftware">
+                                    <div class="carrera-extra">
+                                        <ul>
+                                            <li>Duración: 3 años</li>
+                                            <li>Título: Técnico Superior en Desarrollo de Software</li>
+                                            <li>Salida laboral en empresas de tecnología y desarrollo freelance.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card carrera-card">
+                            <div class="card-body">
+                                <span class="badge bg-warning text-dark mb-2">Presencial</span>
+                                <h6 class="card-title">Tecnología y Biotecnología</h6>
+                                <p class="card-text texto-sutil">Formación en procesos tecnológicos y biotecnológicos aplicados.</p>
+                                <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoBiotecnologia" aria-expanded="false" aria-controls="infoBiotecnologia">
+                                    Ver más información
+                                </button>
+                                <div class="collapse mt-2" id="infoBiotecnologia">
+                                    <div class="carrera-extra">
+                                        <ul>
+                                            <li>Duración: 3 años</li>
+                                            <li>Título: Técnico Superior en Tecnología y Biotecnología</li>
+                                            <li>Salida laboral en laboratorios, industrias y sector científico.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Salud -->
+            <section class="col-12 mb-4">
+                <h5 class="mb-2"><i class="fas fa-heartbeat text-danger me-2"></i>Salud</h5>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="card carrera-card">
+                            <div class="card-body">
+                                <span class="badge bg-warning text-dark mb-2">Presencial</span>
+                                <h6 class="card-title">Enfermería</h6>
+                                <p class="card-text texto-sutil">Prepara profesionales del cuidado con sólidos conocimientos científicos y humanísticos.</p>
+                                <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoEnfermeria" aria-expanded="false" aria-controls="infoEnfermeria">
+                                    Ver más información
+                                </button>
+                                <div class="collapse mt-2" id="infoEnfermeria">
+                                    <div class="carrera-extra">
+                                        <ul>
+                                            <li>Duración: 3 años</li>
+                                            <li>Título: Técnico Superior en Enfermería</li>
+                                            <li>Salida laboral en hospitales, clínicas y centros de salud.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card carrera-card">
+                            <div class="card-body">
+                                <span class="badge bg-warning text-dark mb-2">Presencial</span>
+                                <h6 class="card-title">Hemoterapia</h6>
+                                <p class="card-text texto-sutil">Formación en técnicas de extracción, análisis y transfusión sanguínea.</p>
+                                <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoHemoterapia" aria-expanded="false" aria-controls="infoHemoterapia">
+                                    Ver más información
+                                </button>
+                                <div class="collapse mt-2" id="infoHemoterapia">
+                                    <div class="carrera-extra">
+                                        <ul>
+                                            <li>Duración: 3 años</li>
+                                            <li>Título: Técnico Superior en Hemoterapia</li>
+                                            <li>Salida laboral en bancos de sangre y hospitales.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card carrera-card">
+                            <div class="card-body">
+                                <span class="badge bg-warning text-dark mb-2">Presencial</span>
+                                <h6 class="card-title">Higiene y Seguridad en el Trabajo</h6>
+                                <p class="card-text texto-sutil">Capacita en prevención de riesgos laborales y seguridad industrial.</p>
+                                <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoHigiene" aria-expanded="false" aria-controls="infoHigiene">
+                                    Ver más información
+                                </button>
+                                <div class="collapse mt-2" id="infoHigiene">
+                                    <div class="carrera-extra">
+                                        <ul>
+                                            <li>Duración: 3 años</li>
+                                            <li>Título: Técnico Superior en Higiene y Seguridad en el Trabajo</li>
+                                            <li>Salida laboral en industrias, obras y organismos públicos.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card carrera-card mt-3">
+                            <div class="card-body">
+                                <span class="badge bg-warning text-dark mb-2">Presencial</span>
+                                <h6 class="card-title">Instrumentación Quirúrgica</h6>
+                                <p class="card-text texto-sutil">Especialización en asistencia técnica en el área quirúrgica.</p>
+                                <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoInstrumentacion" aria-expanded="false" aria-controls="infoInstrumentacion">
+                                    Ver más información
+                                </button>
+                                <div class="collapse mt-2" id="infoInstrumentacion">
+                                    <div class="carrera-extra">
+                                        <ul>
+                                            <li>Duración: 3 años</li>
+                                            <li>Título: Técnico Superior en Instrumentación Quirúrgica</li>
+                                            <li>Salida laboral en quirófanos y centros de salud.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card carrera-card mt-3">
+                            <div class="card-body">
+                                <span class="badge bg-warning text-dark mb-2">Presencial</span>
+                                <h6 class="card-title">Óptica y Contactología</h6>
+                                <p class="card-text texto-sutil">Formación en adaptación de lentes y salud visual.</p>
+                                <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoOptica" aria-expanded="false" aria-controls="infoOptica">
+                                    Ver más información
+                                </button>
+                                <div class="collapse mt-2" id="infoOptica">
+                                    <div class="carrera-extra">
+                                        <ul>
+                                            <li>Duración: 3 años</li>
+                                            <li>Título: Técnico Superior en Óptica y Contactología</li>
+                                            <li>Salida laboral en ópticas y centros oftalmológicos.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card carrera-card mt-3">
+                            <div class="card-body">
+                                <span class="badge bg-warning text-dark mb-2">Presencial</span>
+                                <h6 class="card-title">Prótesis Dental</h6>
+                                <p class="card-text texto-sutil">Capacita en diseño y elaboración de prótesis dentales.</p>
+                                <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoProtesis" aria-expanded="false" aria-controls="infoProtesis">
+                                    Ver más información
+                                </button>
+                                <div class="collapse mt-2" id="infoProtesis">
+                                    <div class="carrera-extra">
+                                        <ul>
+                                            <li>Duración: 3 años</li>
+                                            <li>Título: Técnico Superior en Prótesis Dental</li>
+                                            <li>Salida laboral en laboratorios dentales y clínicas.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer-custom py-5">
+        <div class="container">
+            <div class="row g-4 pb-4 border-bottom border-secondary-subtle">
+                <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center justify-content-lg-start mb-4 mb-lg-0">
+                    <a href="https://www.instagram.com/itscordoba.ok/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Enlaces</h5>
+                    <ul class="list-unstyled footer-list">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="carreras.html">Carreras</a></li>
+                        <li><a href="tramites.html">Trámites</a></li>
+                        <li><a href="estudiantes.html">Estudiantes</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Académico</h5>
+                    <ul class="list-unstyled footer-list">
+                        <li><a href="#">Oferta Educativa 2025</a></li>
+                        <li><a href="#">Planes de Estudios</a></li>
+                        <li><a href="#">Calendario Académico</a></li>
+                        <li><a href="#">Requisitos</a></li>
+                        <li><a href="#">Inscripciones</a></li>
+                        <li><a href="#">Egresados</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h5 class="footer-title">Contacto</h5>
+                    <ul class="list-unstyled footer-list-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Río Negro 77, Córdoba</li>
+                        <li><i class="fas fa-phone"></i> 351-1268255</li>
+                        <li><i class="fas fa-envelope"></i> info@itscordoba.edu.ar</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row pt-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+                    <p class="copyright-text mb-0">&copy; 2024 ITSC - Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
