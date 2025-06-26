@@ -1,0 +1,50 @@
+/* Alertas de información y éxito */
+.alerta-info {
+    background: #f4f8ff;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+}
+.alerta-exito {
+    background: #f6fbf7;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+}
+.texto-sutil {
+    color: #6c757d;
+}
+
+/* Noticias y novedades */
+.lista-novedades {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.lista-novedades li {
+    padding: 0.7rem 0;
+    border-bottom: 1px solid #e0e7ef;
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+.novedad-fecha {
+    color: #0d6efd;
+    font-weight: 600;
+    min-width: 110px;
+    display: inline-block;
+}
+.novedad-texto {
+    color: #222;
+}
+
+/* Contacto */
+.contacto-estudiantes p {
+    margin-bottom: 0.5rem;
+    font-size: 1.08rem;
+    color: #0e3757;
+}
+.contacto-estudiantes i {
+    color: #0d6efd;
+    margin-right: 0.5rem;
+}

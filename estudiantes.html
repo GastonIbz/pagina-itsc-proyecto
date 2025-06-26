@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudiantes | ITSC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estudiantes.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg barra-superior-header">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="navbar-brand marca-instituto-header" href="index.html">
+                    <img src="img/Logo.ico" alt="Logo ITSC" class="imagen-logo">
+                    <div class="nombre-instituto-texto">
+                        ITSC
+                        <small class="texto-sutil">Instituto Técnico Superior Córdoba</small>
+                    </div>
+                </a>
+                <form class="d-flex buscador-header-superior" role="search">
+                    <div class="grupo-input-mediano">
+                        <input type="text" class="campo-busqueda" placeholder="¿Qué estás buscando?" aria-label="Buscar">
+                        <button class="boton-busqueda" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg barra-navegacion-principal">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipalNavbar" aria-controls="menuPrincipalNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipalNavbar">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="carreras.html">Carreras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold active" href="estudiantes.html">Estudiantes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="tramites.html">Trámites</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+   <main class="container my-5">
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Estudiantes</li>
+        </ol>
+    </nav>
+
+    <h1 class="mb-2">Estudiantes</h1>
+    <p class="lead mb-4 texto-sutil">Información General</p>
+
+    <div class="row g-3 mb-4">
+        <div class="col-12">
+            <div class="alerta-info d-flex align-items-start gap-3 p-4 shadow-sm">
+                <i class="fas fa-comments fa-2x text-primary mt-1"></i>
+                <div>
+                    <strong>Consultas Académicas</strong>
+                    <div class="mt-1 texto-sutil">
+                        Les recordamos que toda consulta deben realizarla primeramente a los delegados del curso para que ellos transmitan sus inquietudes a los preceptores/coordinadores.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="alerta-exito d-flex align-items-start gap-3 p-4 shadow-sm">
+                <i class="fas fa-file-alt fa-2x text-success mt-1"></i>
+                <div>
+                    <strong>Constancias de Alumno Regular</strong>
+                    <div class="mt-1 texto-sutil">
+                        Las constancias de alumno regular o constancia de asistencia a exámenes deben ser solicitadas a sus preceptores / coordinadores. Las mismas se entregan entre las 24 y 48 hs de haber sido solicitadas.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-- Nuevo bloque de contacto emails carreras -->
+    <div class="mt-5">
+        <h3 class="mb-3">Contacto Emails Carreras</h3>
+        <a href="docs/emails-carreras.pdf" class="btn btn-primary" download>
+            <i class="fas fa-download me-2"></i>Descargar PDF - Emails de Carreras
+        </a>
+    </div>
+    <br>
+    <section class="mb-5">
+        <h3 class="mb-3">Noticias y Novedades</h3>
+        <ul class="lista-novedades">
+            <li>
+                <span class="novedad-fecha">25/06/2025</span>
+                <span class="novedad-texto">Inscripciones abiertas para mesas de examen julio 2025.</span>
+            </li>
+            <li>
+                <span class="novedad-fecha">20/06/2025</span>
+                <span class="novedad-texto">Nuevo reglamento de convivencia disponible en Secretaría.</span>
+            </li>
+            <li>
+                <span class="novedad-fecha">15/06/2025</span>
+                <span class="novedad-texto">Taller de orientación vocacional: inscribite en el formulario online.</span>
+            </li>
+             <li>
+                <span class="novedad-fecha">25/06/2025</span>
+                <span class="novedad-texto">Juntada Estudiantil: Hamburgueseada para alumnos.</span>
+            </li>
+            
+        </ul>
+    </section>
+
+   
+</main>
+    <footer class="footer-custom py-5">
+        <div class="container">
+            <div class="row g-4 pb-4 border-bottom border-secondary-subtle">
+                <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center justify-content-lg-start mb-4 mb-lg-0">
+                    <a href="https://www.instagram.com/itscordoba.ok/" class="social-icon">
+    <i class="fab fa-instagram"></i>
+</a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Enlaces</h5>
+                    <ul class="list-unstyled footer-list">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="carreras.html">Carreras</a></li>
+                        <li><a href="tramites.html">Trámites</a></li>
+                        <li><a href="estudiantes.html">Estudiantes</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Académico</h5>
+                    <ul class="list-unstyled footer-list">
+                        <li><a href="#">Oferta Educativa 2025</a></li>
+                        <li><a href="#">Planes de Estudios</a></li>
+                        <li><a href="#">Calendario Académico</a></li>
+                        <li><a href="#">Requisitos</a></li>
+                        <li><a href="#">Inscripciones</a></li>
+                        <li><a href="#">Egresados</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h5 class="footer-title">Contacto</h5>
+                    <ul class="list-unstyled footer-list-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Río Negro 77, Córdoba</li>
+                        <li><i class="fas fa-phone"></i> 351-1268255</li>
+                        <li><i class="fas fa-envelope"></i> info@itscordoba.edu.ar</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row pt-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+                    <p class="copyright-text mb-0">&copy; 2024 ITSC - Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

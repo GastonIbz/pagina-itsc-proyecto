@@ -48,297 +48,389 @@
         <a class="nav-link fw-bold" href="carreras.html">Carreras</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link fw-bold" href="tramites.html">Trámites</a>
-    </li>
-    <li class="nav-item">
          <a class="nav-link fw-bold" href="estudiantes.html">Estudiantes</a>
        
     </li>
+    <li class="nav-item">
+        <a class="nav-link fw-bold" href="tramites.html">Trámites</a>
+    </li>
+    
 </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main class="container my-5">
-        <h1 class="mb-2">Carreras</h1>
-        <p class="mb-4 texto-sutil">Explora nuestros programas académicos y encuentra tu vocación</p>
+ <main class="container my-5">
+    <h1 class="mb-2">Carreras</h1>
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="mb-3">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Carreras</li>
+        </ol>
+    </nav>
+    <p class="mb-4 texto-sutil">Explora nuestros programas académicos y encuentra tu vocación</p>
 
-        <div class="row g-4">
-            <!-- Administración y Gestión -->
-            <section class="col-12 mb-4">
-                <h5 class="mb-2"><i class="fas fa-briefcase text-primary me-2"></i>Administración y Gestión</h5>
-                <div class="row g-3">
-                    <div class="col-md-4">
-                        <div class="card carrera-card">
-                            <div class="card-body">
-                                <span class="badge bg-warning text-dark mb-2">Presencial</span>
-                                <h6 class="card-title">Administración</h6>
-                                <p class="card-text texto-sutil">Desarrolla competencias para liderar organizaciones en entornos dinámicos.</p>
-                                <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoAdmin" aria-expanded="false" aria-controls="infoAdmin">
-                                    Ver más información
-                                </button>
-                                <div class="collapse mt-2" id="infoAdmin">
-                                    <div class="carrera-extra">
-                                        <ul>
-                                            <li>Duración: 3 años</li>
-                                            <li>Título: Técnico Superior en Administración</li>
-                                            <li>Salida laboral en empresas, PyMEs y sector público.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card carrera-card">
-                            <div class="card-body">
-                                <span class="badge bg-warning text-dark mb-2">Presencial</span>
-                                <h6 class="card-title">Administración de Recursos</h6>
-                                <p class="card-text texto-sutil">Gestiona recursos humanos, materiales y financieros de manera eficiente.</p>
-                                <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoAdminRecursos" aria-expanded="false" aria-controls="infoAdminRecursos">
-                                    Ver más información
-                                </button>
-                                <div class="collapse mt-2" id="infoAdminRecursos">
-                                    <div class="carrera-extra">
-                                        <ul>
-                                            <li>Duración: 3 años</li>
-                                            <li>Título: Técnico Superior en Administración de Recursos</li>
-                                            <li>Gestión de recursos en organizaciones públicas y privadas.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card carrera-card">
-                            <div class="card-body">
-                                <span class="badge bg-warning text-dark mb-2">Presencial</span>
-                                <h6 class="card-title">Gestión Ambiental</h6>
-                                <p class="card-text texto-sutil">Formación en gestión sostenible y protección del medio ambiente.</p>
-                                <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoAmbiental" aria-expanded="false" aria-controls="infoAmbiental">
-                                    Ver más información
-                                </button>
-                                <div class="collapse mt-2" id="infoAmbiental">
-                                    <div class="carrera-extra">
-                                        <ul>
-                                            <li>Duración: 3 años</li>
-                                            <li>Título: Técnico Superior en Gestión Ambiental</li>
-                                            <li>Salida laboral en organismos ambientales y empresas.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card carrera-card mt-3">
-                            <div class="card-body">
-                                <span class="badge bg-warning text-dark mb-2">Presencial</span>
-                                <h6 class="card-title">Gestión y Mantenimiento</h6>
-                                <p class="card-text texto-sutil">Capacita en el mantenimiento y gestión de infraestructuras y servicios.</p>
-                                <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoMantenimiento" aria-expanded="false" aria-controls="infoMantenimiento">
-                                    Ver más información
-                                </button>
-                                <div class="collapse mt-2" id="infoMantenimiento">
-                                    <div class="carrera-extra">
-                                        <ul>
-                                            <li>Duración: 3 años</li>
-                                            <li>Título: Técnico Superior en Gestión y Mantenimiento</li>
-                                            <li>Salida laboral en industrias y servicios técnicos.</li>
-                                        </ul>
-                                    </div>
+    <div class="row g-4">
+        <!-- Administración y Gestión -->
+        <section class="col-12 mb-4">
+            <h5 class="mb-2"><i class="fas fa-briefcase text-primary me-2"></i>Administración y Gestión</h5>
+            <div class="row g-3">
+                <!-- ADMINISTRACIÓN -->
+                <div class="col-md-4">
+                    <div class="card carrera-card">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Presencial</span>
+                            <h6 class="card-title">Administración</h6>
+                            <p class="card-text texto-sutil">Desarrolla competencias para liderar organizaciones en entornos dinámicos.</p>
+                            <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoAdmin">
+                                Ver más información
+                            </button>
+                            <div class="collapse mt-2" id="infoAdmin">
+                                <div class="carrera-extra">
+                                    <ul>
+                                        <li>Duración: 3 años</li>
+                                        <li>Título: Técnico Superior en Administración</li>
+                                        <li>Salida laboral en empresas, PyMEs y sector público.</li>
+                                    </ul>
+                                    <a href="docs/plan-administracion.pdf" class="btn btn-outline-primary btn-sm mt-2" download>
+                                        Descargar Plan de Estudio <i class="fas fa-file-download ms-1"></i>
+                                    </a>
+                                    <button class="btn-ver-menos mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#infoAdmin">
+                                        Ver menos información
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <!-- Tecnología -->
-            <section class="col-12 mb-4">
-                <h5 class="mb-2"><i class="fas fa-laptop-code text-success me-2"></i>Tecnología</h5>
-                <div class="row g-3">
-                    <div class="col-md-4">
-                        <div class="card carrera-card">
-                            <div class="card-body">
-                                <span class="badge bg-warning text-dark mb-2">Presencial</span>
-                                <h6 class="card-title">Desarrollo de Software</h6>
-                                <p class="card-text texto-sutil">Aprende a diseñar, desarrollar y mantener aplicaciones y sistemas informáticos.</p>
-                                <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoSoftware" aria-expanded="false" aria-controls="infoSoftware">
-                                    Ver más información
-                                </button>
-                                <div class="collapse mt-2" id="infoSoftware">
-                                    <div class="carrera-extra">
-                                        <ul>
-                                            <li>Duración: 3 años</li>
-                                            <li>Título: Técnico Superior en Desarrollo de Software</li>
-                                            <li>Salida laboral en empresas de tecnología y desarrollo freelance.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card carrera-card">
-                            <div class="card-body">
-                                <span class="badge bg-warning text-dark mb-2">Presencial</span>
-                                <h6 class="card-title">Tecnología y Biotecnología</h6>
-                                <p class="card-text texto-sutil">Formación en procesos tecnológicos y biotecnológicos aplicados.</p>
-                                <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoBiotecnologia" aria-expanded="false" aria-controls="infoBiotecnologia">
-                                    Ver más información
-                                </button>
-                                <div class="collapse mt-2" id="infoBiotecnologia">
-                                    <div class="carrera-extra">
-                                        <ul>
-                                            <li>Duración: 3 años</li>
-                                            <li>Título: Técnico Superior en Tecnología y Biotecnología</li>
-                                            <li>Salida laboral en laboratorios, industrias y sector científico.</li>
-                                        </ul>
-                                    </div>
+                <!-- ADMINISTRACIÓN DE RECURSOS -->
+                <div class="col-md-4">
+                    <div class="card carrera-card">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Presencial</span>
+                            <h6 class="card-title">Administración de Recursos</h6>
+                            <p class="card-text texto-sutil">Gestiona recursos humanos, materiales y financieros de manera eficiente.</p>
+                            <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoAdminRecursos">
+                                Ver más información
+                            </button>
+                            <div class="collapse mt-2" id="infoAdminRecursos">
+                                <div class="carrera-extra">
+                                    <ul>
+                                        <li>Duración: 3 años</li>
+                                        <li>Título: Técnico Superior en Administración de Recursos</li>
+                                        <li>Gestión de recursos en organizaciones públicas y privadas.</li>
+                                    </ul>
+                                    <a href="docs/plan-administracion-recursos.pdf" class="btn btn-outline-primary btn-sm mt-2" download>
+                                        Descargar Plan de Estudio <i class="fas fa-file-download ms-1"></i>
+                                    </a>
+                                    <button class="btn-ver-menos mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#infoAdminRecursos">
+                                        Ver menos información
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <!-- Salud -->
-            <section class="col-12 mb-4">
-                <h5 class="mb-2"><i class="fas fa-heartbeat text-danger me-2"></i>Salud</h5>
-                <div class="row g-3">
-                    <div class="col-md-4">
-                        <div class="card carrera-card">
-                            <div class="card-body">
-                                <span class="badge bg-warning text-dark mb-2">Presencial</span>
-                                <h6 class="card-title">Enfermería</h6>
-                                <p class="card-text texto-sutil">Prepara profesionales del cuidado con sólidos conocimientos científicos y humanísticos.</p>
-                                <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoEnfermeria" aria-expanded="false" aria-controls="infoEnfermeria">
-                                    Ver más información
-                                </button>
-                                <div class="collapse mt-2" id="infoEnfermeria">
-                                    <div class="carrera-extra">
-                                        <ul>
-                                            <li>Duración: 3 años</li>
-                                            <li>Título: Técnico Superior en Enfermería</li>
-                                            <li>Salida laboral en hospitales, clínicas y centros de salud.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card carrera-card">
-                            <div class="card-body">
-                                <span class="badge bg-warning text-dark mb-2">Presencial</span>
-                                <h6 class="card-title">Hemoterapia</h6>
-                                <p class="card-text texto-sutil">Formación en técnicas de extracción, análisis y transfusión sanguínea.</p>
-                                <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoHemoterapia" aria-expanded="false" aria-controls="infoHemoterapia">
-                                    Ver más información
-                                </button>
-                                <div class="collapse mt-2" id="infoHemoterapia">
-                                    <div class="carrera-extra">
-                                        <ul>
-                                            <li>Duración: 3 años</li>
-                                            <li>Título: Técnico Superior en Hemoterapia</li>
-                                            <li>Salida laboral en bancos de sangre y hospitales.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card carrera-card">
-                            <div class="card-body">
-                                <span class="badge bg-warning text-dark mb-2">Presencial</span>
-                                <h6 class="card-title">Higiene y Seguridad en el Trabajo</h6>
-                                <p class="card-text texto-sutil">Capacita en prevención de riesgos laborales y seguridad industrial.</p>
-                                <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoHigiene" aria-expanded="false" aria-controls="infoHigiene">
-                                    Ver más información
-                                </button>
-                                <div class="collapse mt-2" id="infoHigiene">
-                                    <div class="carrera-extra">
-                                        <ul>
-                                            <li>Duración: 3 años</li>
-                                            <li>Título: Técnico Superior en Higiene y Seguridad en el Trabajo</li>
-                                            <li>Salida laboral en industrias, obras y organismos públicos.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card carrera-card mt-3">
-                            <div class="card-body">
-                                <span class="badge bg-warning text-dark mb-2">Presencial</span>
-                                <h6 class="card-title">Instrumentación Quirúrgica</h6>
-                                <p class="card-text texto-sutil">Especialización en asistencia técnica en el área quirúrgica.</p>
-                                <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoInstrumentacion" aria-expanded="false" aria-controls="infoInstrumentacion">
-                                    Ver más información
-                                </button>
-                                <div class="collapse mt-2" id="infoInstrumentacion">
-                                    <div class="carrera-extra">
-                                        <ul>
-                                            <li>Duración: 3 años</li>
-                                            <li>Título: Técnico Superior en Instrumentación Quirúrgica</li>
-                                            <li>Salida laboral en quirófanos y centros de salud.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card carrera-card mt-3">
-                            <div class="card-body">
-                                <span class="badge bg-warning text-dark mb-2">Presencial</span>
-                                <h6 class="card-title">Óptica y Contactología</h6>
-                                <p class="card-text texto-sutil">Formación en adaptación de lentes y salud visual.</p>
-                                <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoOptica" aria-expanded="false" aria-controls="infoOptica">
-                                    Ver más información
-                                </button>
-                                <div class="collapse mt-2" id="infoOptica">
-                                    <div class="carrera-extra">
-                                        <ul>
-                                            <li>Duración: 3 años</li>
-                                            <li>Título: Técnico Superior en Óptica y Contactología</li>
-                                            <li>Salida laboral en ópticas y centros oftalmológicos.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card carrera-card mt-3">
-                            <div class="card-body">
-                                <span class="badge bg-warning text-dark mb-2">Presencial</span>
-                                <h6 class="card-title">Prótesis Dental</h6>
-                                <p class="card-text texto-sutil">Capacita en diseño y elaboración de prótesis dentales.</p>
-                                <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoProtesis" aria-expanded="false" aria-controls="infoProtesis">
-                                    Ver más información
-                                </button>
-                                <div class="collapse mt-2" id="infoProtesis">
-                                    <div class="carrera-extra">
-                                        <ul>
-                                            <li>Duración: 3 años</li>
-                                            <li>Título: Técnico Superior en Prótesis Dental</li>
-                                            <li>Salida laboral en laboratorios dentales y clínicas.</li>
-                                        </ul>
-                                    </div>
+                <!-- GESTIÓN AMBIENTAL -->
+                <div class="col-md-4">
+                    <div class="card carrera-card">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Presencial</span>
+                            <h6 class="card-title">Gestión Ambiental</h6>
+                            <p class="card-text texto-sutil">Formación en gestión sostenible y protección del medio ambiente.</p>
+                            <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoAmbiental">
+                                Ver más información
+                            </button>
+                            <div class="collapse mt-2" id="infoAmbiental">
+                                <div class="carrera-extra">
+                                    <ul>
+                                        <li>Duración: 3 años</li>
+                                        <li>Título: Técnico Superior en Gestión Ambiental</li>
+                                        <li>Salida laboral en organismos ambientales y empresas.</li>
+                                    </ul>
+                                    <a href="docs/plan-gestion-ambiental.pdf" class="btn btn-outline-primary btn-sm mt-2" download>
+                                        Descargar Plan de Estudio <i class="fas fa-file-download ms-1"></i>
+                                    </a>
+                                    <button class="btn-ver-menos mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#infoAmbiental">
+                                        Ver menos información
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
-    </main>
+                <!-- GESTIÓN Y MANTENIMIENTO -->
+                <div class="col-md-4">
+                    <div class="card carrera-card mt-3">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Presencial</span>
+                            <h6 class="card-title">Gestión y Mantenimiento</h6>
+                            <p class="card-text texto-sutil">Capacita en el mantenimiento y gestión de infraestructuras y servicios.</p>
+                            <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoMantenimiento">
+                                Ver más información
+                            </button>
+                            <div class="collapse mt-2" id="infoMantenimiento">
+                                <div class="carrera-extra">
+                                    <ul>
+                                        <li>Duración: 3 años</li>
+                                        <li>Título: Técnico Superior en Gestión y Mantenimiento</li>
+                                        <li>Salida laboral en industrias y servicios técnicos.</li>
+                                    </ul>
+                                    <a href="docs/plan-gestion-mantenimiento.pdf" class="btn btn-outline-primary btn-sm mt-2" download>
+                                        Descargar Plan de Estudio <i class="fas fa-file-download ms-1"></i>
+                                    </a>
+                                    <button class="btn-ver-menos mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#infoMantenimiento">
+                                        Ver menos información
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tecnología -->
+        <section class="col-12 mb-4">
+            <h5 class="mb-2"><i class="fas fa-laptop-code text-success me-2"></i>Tecnología</h5>
+            <div class="row g-3">
+                <!-- DESARROLLO DE SOFTWARE -->
+                <div class="col-md-4">
+                    <div class="card carrera-card">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Presencial</span>
+                            <h6 class="card-title">Desarrollo de Software</h6>
+                            <p class="card-text texto-sutil">Aprende a diseñar, desarrollar y mantener aplicaciones y sistemas informáticos.</p>
+                            <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoSoftware">
+                                Ver más información
+                            </button>
+                            <div class="collapse mt-2" id="infoSoftware">
+                                <div class="carrera-extra">
+                                    <ul>
+                                        <li>Duración: 3 años</li>
+                                        <li>Título: Técnico Superior en Desarrollo de Software</li>
+                                        <li>Salida laboral en empresas de tecnología y desarrollo freelance.</li>
+                                    </ul>
+                                    <a href="docs/plan-desarrollo-software.pdf" class="btn btn-outline-primary btn-sm mt-2" download>
+                                        Descargar Plan de Estudio <i class="fas fa-file-download ms-1"></i>
+                                    </a>
+                                    <button class="btn-ver-menos mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#infoSoftware">
+                                        Ver menos información
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- TECNOLOGÍA Y BIOTECNOLOGÍA -->
+                <div class="col-md-4">
+                    <div class="card carrera-card">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Presencial</span>
+                            <h6 class="card-title">Tecnología y Biotecnología</h6>
+                            <p class="card-text texto-sutil">Formación en procesos tecnológicos y biotecnológicos aplicados.</p>
+                            <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoBiotecnologia">
+                                Ver más información
+                            </button>
+                            <div class="collapse mt-2" id="infoBiotecnologia">
+                                <div class="carrera-extra">
+                                    <ul>
+                                        <li>Duración: 3 años</li>
+                                        <li>Título: Técnico Superior en Tecnología y Biotecnología</li>
+                                        <li>Salida laboral en laboratorios, industrias y sector científico.</li>
+                                    </ul>
+                                    <a href="docs/plan-biotecnologia.pdf" class="btn btn-outline-primary btn-sm mt-2" download>
+                                        Descargar Plan de Estudio <i class="fas fa-file-download ms-1"></i>
+                                    </a>
+                                    <button class="btn-ver-menos mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#infoBiotecnologia">
+                                        Ver menos información
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Salud -->
+        <section class="col-12 mb-4">
+            <h5 class="mb-2"><i class="fas fa-heartbeat text-danger me-2"></i>Salud</h5>
+            <div class="row g-3">
+                <!-- ENFERMERÍA -->
+                <div class="col-md-4">
+                    <div class="card carrera-card">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Presencial</span>
+                            <h6 class="card-title">Enfermería</h6>
+                            <p class="card-text texto-sutil">Prepara profesionales del cuidado con sólidos conocimientos científicos y humanísticos.</p>
+                            <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoEnfermeria">
+                                Ver más información
+                            </button>
+                            <div class="collapse mt-2" id="infoEnfermeria">
+                                <div class="carrera-extra">
+                                    <ul>
+                                        <li>Duración: 3 años</li>
+                                        <li>Título: Técnico Superior en Enfermería</li>
+                                        <li>Salida laboral en hospitales, clínicas y centros de salud.</li>
+                                    </ul>
+                                    <a href="docs/plan-enfermeria.pdf" class="btn btn-outline-primary btn-sm mt-2" download>
+                                        Descargar Plan de Estudio <i class="fas fa-file-download ms-1"></i>
+                                    </a>
+                                    <button class="btn-ver-menos mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#infoEnfermeria">
+                                        Ver menos información
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- HEMOTERAPIA -->
+                <div class="col-md-4">
+                    <div class="card carrera-card">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Presencial</span>
+                            <h6 class="card-title">Hemoterapia</h6>
+                            <p class="card-text texto-sutil">Formación en técnicas de extracción, análisis y transfusión sanguínea.</p>
+                            <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoHemoterapia">
+                                Ver más información
+                            </button>
+                            <div class="collapse mt-2" id="infoHemoterapia">
+                                <div class="carrera-extra">
+                                    <ul>
+                                        <li>Duración: 3 años</li>
+                                        <li>Título: Técnico Superior en Hemoterapia</li>
+                                        <li>Salida laboral en bancos de sangre y hospitales.</li>
+                                    </ul>
+                                    <a href="docs/plan-hemoterapia.pdf" class="btn btn-outline-primary btn-sm mt-2" download>
+                                        Descargar Plan de Estudio <i class="fas fa-file-download ms-1"></i>
+                                    </a>
+                                    <button class="btn-ver-menos mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#infoHemoterapia">
+                                        Ver menos información
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- HIGIENE Y SEGURIDAD EN EL TRABAJO -->
+                <div class="col-md-4">
+                    <div class="card carrera-card">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Presencial</span>
+                            <h6 class="card-title">Higiene y Seguridad en el Trabajo</h6>
+                            <p class="card-text texto-sutil">Capacita en prevención de riesgos laborales y seguridad industrial.</p>
+                            <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoHigiene">
+                                Ver más información
+                            </button>
+                            <div class="collapse mt-2" id="infoHigiene">
+                                <div class="carrera-extra">
+                                    <ul>
+                                        <li>Duración: 3 años</li>
+                                        <li>Título: Técnico Superior en Higiene y Seguridad en el Trabajo</li>
+                                        <li>Salida laboral en industrias, obras y organismos públicos.</li>
+                                    </ul>
+                                    <a href="docs/plan-higiene-seguridad.pdf" class="btn btn-outline-primary btn-sm mt-2" download>
+                                        Descargar Plan de Estudio <i class="fas fa-file-download ms-1"></i>
+                                    </a>
+                                    <button class="btn-ver-menos mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#infoHigiene">
+                                        Ver menos información
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- INSTRUMENTACIÓN QUIRÚRGICA -->
+                <div class="col-md-4">
+                    <div class="card carrera-card mt-3">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Presencial</span>
+                            <h6 class="card-title">Instrumentación Quirúrgica</h6>
+                            <p class="card-text texto-sutil">Especialización en asistencia técnica en el área quirúrgica.</p>
+                            <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoInstrumentacion">
+                                Ver más información
+                            </button>
+                            <div class="collapse mt-2" id="infoInstrumentacion">
+                                <div class="carrera-extra">
+                                    <ul>
+                                        <li>Duración: 3 años</li>
+                                        <li>Título: Técnico Superior en Instrumentación Quirúrgica</li>
+                                        <li>Salida laboral en quirófanos y centros de salud.</li>
+                                    </ul>
+                                    <a href="docs/plan-instrumentacion.pdf" class="btn btn-outline-primary btn-sm mt-2" download>
+                                        Descargar Plan de Estudio <i class="fas fa-file-download ms-1"></i>
+                                    </a>
+                                    <button class="btn-ver-menos mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#infoInstrumentacion">
+                                        Ver menos información
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ÓPTICA Y CONTACTOLOGÍA -->
+                <div class="col-md-4">
+                    <div class="card carrera-card mt-3">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Presencial</span>
+                            <h6 class="card-title">Óptica y Contactología</h6>
+                            <p class="card-text texto-sutil">Formación en adaptación de lentes y salud visual.</p>
+                            <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoOptica">
+                                Ver más información
+                            </button>
+                            <div class="collapse mt-2" id="infoOptica">
+                                <div class="carrera-extra">
+                                    <ul>
+                                        <li>Duración: 3 años</li>
+                                        <li>Título: Técnico Superior en Óptica y Contactología</li>
+                                        <li>Salida laboral en ópticas y centros oftalmológicos.</li>
+                                    </ul>
+                                    <a href="docs/plan-optica.pdf" class="btn btn-outline-primary btn-sm mt-2" download>
+                                        Descargar Plan de Estudio <i class="fas fa-file-download ms-1"></i>
+                                    </a>
+                                    <button class="btn-ver-menos mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#infoOptica">
+                                        Ver menos información
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- PRÓTESIS DENTAL -->
+                <div class="col-md-4">
+                    <div class="card carrera-card mt-3">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Presencial</span>
+                            <h6 class="card-title">Prótesis Dental</h6>
+                            <p class="card-text texto-sutil">Capacita en diseño y elaboración de prótesis dentales.</p>
+                            <button class="btn-ver-mas" type="button" data-bs-toggle="collapse" data-bs-target="#infoProtesis">
+                                Ver más información
+                            </button>
+                            <div class="collapse mt-2" id="infoProtesis">
+                                <div class="carrera-extra">
+                                    <ul>
+                                        <li>Duración: 3 años</li>
+                                        <li>Título: Técnico Superior en Prótesis Dental</li>
+                                        <li>Salida laboral en laboratorios dentales y clínicas.</li>
+                                    </ul>
+                                    <a href="docs/plan-protesis.pdf" class="btn btn-outline-primary btn-sm mt-2" download>
+                                        Descargar Plan de Estudio <i class="fas fa-file-download ms-1"></i>
+                                    </a>
+                                    <button class="btn-ver-menos mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#infoProtesis">
+                                        Ver menos información
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
 
     <footer class="footer-custom py-5">
         <div class="container">
@@ -352,8 +444,8 @@
                         <li><a href="index.html">Inicio</a></li>
                         <li><a href="nosotros.html">Nosotros</a></li>
                         <li><a href="carreras.html">Carreras</a></li>
-                        <li><a href="tramites.html">Trámites</a></li>
                         <li><a href="estudiantes.html">Estudiantes</a></li>
+                        <li><a href="tramites.html">Trámites</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 mb-4 mb-lg-0">

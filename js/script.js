@@ -66,3 +66,22 @@ document.addEventListener('DOMContentLoaded', function() {
     const footerNavLinks = document.querySelectorAll('.footer-list a'); // Selecciona los enlaces dentro de la clase .footer-list
     activateNavLink(footerNavLinks);
 });
+
+
+// Ver más y ver menos para las carreras
+    document.addEventListener('DOMContentLoaded', function () {
+    // Para cada collapse de carrera
+    document.querySelectorAll('.collapse').forEach(function (collapse) {
+        var btnVerMas = collapse.parentElement.querySelector('.btn-ver-mas');
+        var btnVerMenos = collapse.querySelector('.btn-ver-menos');
+
+        // Al abrir el collapse
+        collapse.addEventListener('show.bs.collapse', function () {
+        if (btnVerMas) btnVerMas.style.display = 'none';
+        });
+        // Al cerrar el collapse
+        collapse.addEventListener('hide.bs.collapse', function () {
+        if (btnVerMas) btnVerMas.style.display = 'inline-block';
+        });
+    });
+    });

@@ -59,3 +59,37 @@
 .collapse.show .carrera-extra {
     display: block;
 }
+
+.btn-ver-mas {
+    background: #0d6efd;
+    color: #fff;
+    border: none;
+    padding: 6px 16px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+.btn-ver-mas:hover {
+    background: #084298;
+}
+
+.btn-ver-mas[aria-expanded="true"] {
+    display: none;
+}
+
+.btn-ver-menos {
+    display: none;
+    background: #0d6efd;
+    color: #fff;
+    border: none;
+    padding: 6px 16px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+.btn-ver-menos:hover {
+    background: #084298;
+}
+.collapse.show .btn-ver-menos {
+    display: inline-block;
+}
