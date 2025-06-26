@@ -357,33 +357,35 @@ a:hover {
 }
 
 /* Marca del Instituto (Logo y Texto) */
-.marca-instituto-header {
-    display: flex; /* Para alinear el logo y el texto */
-    align-items: center; /* Centrar verticalmente */
-    text-decoration: none; /* Quitar subrayado */
-    /* REMOVIDO: color: var(--color-texto-oscuro); */ /* Este se sobrescribirá para el ITSC */
-    margin-right: auto; /* Empuja el buscador a la derecha, llevando el logo a la izquierda */
-    transition: transform 0.2s ease-in-out;
+.marca-instituto-header .nombre-instituto-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.2;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--color-azul-principal); /* Color azul primario */
 }
 
 .marca-instituto-header:hover {
-    transform: scale(1.02); /* Efecto al pasar el mouse */
+    transform: scale(1.02);
 }
 
 .marca-instituto-header .imagen-logo {
-    width: 45px; /* Tamaño del logo*/
+    width: 45px;
     height: 45px;
-    margin-right: var(--espaciado-xs); /* Espacio entre logo y texto */
+    margin-right: var(--espaciado-xs);
     flex-shrink: 0;
 }
 
 .marca-instituto-header .nombre-instituto-texto {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinea el texto a la izquierda, como en la imagen*/
-    line-height: 1.2;
+    align-items: flex-start;
+    line-height: 1.1;
     font-weight: 700;
-    font-size: 1.4rem; /* Tamaño para "ITSC" */
+    font-size: 1.6rem;
+    color: var(--color-azul-principal); /* Azul institucional */
 }
 
 /* NUEVO: Color para el texto "ITSC" */
@@ -392,7 +394,7 @@ a:hover {
 }
 
 .marca-instituto-header .nombre-instituto-texto small {
-    font-size: 0.75em !important; /* Tamaño para el texto sutil*/
+    font-size: 0.75em !important;
     color: var(--color-texto-claro) !important;
     font-weight: 400;
     white-space: nowrap;
