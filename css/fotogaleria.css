@@ -1,0 +1,13 @@
+.galeria-itsc .card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+.galeria-itsc .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+.galeria-itsc img {
+    object-fit: cover;
+    height: 260px;
+}

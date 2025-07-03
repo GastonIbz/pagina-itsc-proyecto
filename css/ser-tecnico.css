@@ -1,0 +1,35 @@
+/* Card principal */
+.card {
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(14,55,87,0.08);
+    border: 1px solid #e0e7ef;
+    background: #fff;
+}
+
+/* Enlaces de material */
+.card-body a {
+    color: #0d6efd;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.card-body a:hover {
+    color: #084298;
+    text-decoration: underline;
+}
+
+/* Listas */
+.card-body ul {
+    padding-left: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-body li {
+    margin-bottom: 0.5rem;
+    font-size: 1.08rem;
+}
+
+/* Espaciado entre cards */
+.card + .card {
+    margin-top: 1.5rem;
+}
